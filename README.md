@@ -1,53 +1,55 @@
-# Patients-Hospital-Analysis-Dashboard
+# 🏥 Hospital Patient Analysis & ML Prediction Dashboard
 
-## Description
-This project is a **Hospital Patient Analysis Dashboard** that provides insights into hospital patient data, such as admission details, demographic information, wait times, referral sources, and patient status. The dashboard offers interactive visualizations using Power BI to help healthcare professionals, analysts, and hospital administrators understand patient trends and operational efficiency.
+## 📌 Project Overview  
+This project is a **Hospital Patient Analysis Dashboard** designed to provide insights into **patient admissions, demographics, wait times, and referral sources** using **Power BI**. Additionally, **machine learning models** were implemented to predict **patient admission likelihood and estimated wait times**, enhancing hospital operational efficiency.
 
-The key focus of this analysis is to:
-- Understand patient admission trends.
-- Analyze patient demographics (age, gender, race).
-- Evaluate the efficiency of the hospital system (wait times, referral sources).
-- Provide actionable insights for hospital management to optimize patient care and resource allocation.
+## 🎯 Key Objectives  
+- Analyze **patient admission trends** and demographics (**age, gender, race**).  
+- Evaluate **hospital system efficiency** based on **wait times and referral sources**.  
+- Implement **ML models (Random Forest, XGBoost)** to predict **patient admissions and wait times**.  
+- Provide **actionable insights** to optimize **resource allocation and patient care**.  
 
-## Data Description
+## 📂 Data Description  
 The dataset consists of the following features:
+- **Patient ID** → Unique identifier for each patient.  
+- **Admission Date** → Date of patient admission.  
+- **Gender, Age, Race** → Patient demographic details.  
+- **Referral** → Source of patient referral (e.g., Orthopedics, Neurology).  
+- **Admission** → Patient admission status (**Admitted / Not Admitted**).  
+- **Score** → Severity score related to the patient's condition.  
+- **Waittime** → Time before receiving medical attention.  
+- **Case Manager** → Assigned case manager for patient care.  
 
-- **Patient ID**: Unique identifier for each patient.
-- **Admission Date**: Date when the patient was admitted.
-- **First Initial**: First initial of the patient's name.
-- **Last Name**: Last name of the patient.
-- **Gender**: Gender of the patient.
-- **Age**: Age of the patient.
-- **Race**: Ethnicity/race of the patient.
-- **Referral**: Referral source (e.g.,Orthopedics,Neurologist, etc.).
-- **Admission**: Admission status (whether the patient is admitted or not).
-- **Score**: A patient-related score (e.g., severity of condition).
-- **Waittime**: The amount of time the patient had to wait before being attended to.
-- **Case Manager**: The assigned case manager for the patient.
+## 📊 Visualizations & Insights  
+✔ **Patient Status** → Bar chart showing **admitted vs. not admitted** patients.  
+✔ **Admission Trends** → Line chart displaying **monthly patient admissions**.  
+✔ **Patient Demographics** → **Pie charts** for **gender & race distribution**.  
+✔ **Referral Analysis** → **Bar chart** showing **patients referred by each specialty**.  
+✔ **Wait Time Efficiency** → Pie chart categorizing patients by wait-time efficiency.  
+✔ **Actual vs. Predicted Wait Time** → **Clustered Column Chart** comparing **ML predictions vs. actual wait times**.  
 
-## Visualizations & Insights
+## 📌 Machine Learning Integration  
+- **ML Models Used:** **Random Forest (Admission Prediction), XGBoost (Wait Time Prediction)**.  
+- **Feature Engineering** applied to transform **categorical variables** for ML training.  
+- **DAX-powered KPIs** to track ML prediction performance against actual hospital data.  
 
-- **Patient Status**: A bar chart showing the number of patients who are admitted vs. not admitted.
-- **Patients by Month**: A line graph showing the number of patients admitted each month.
-- **Average Age by Gender**: A bar chart that compares the average age of patients by gender.
-- **Patients by Referral**: A bar chart showing the number of patients referred by various sources like Dentists, Neurologists, etc.
-- **Patients by Race**: A pie chart showing the distribution of patients by race.
-- **Patients by Gender**: A pie chart showing the gender distribution of patients.
-- **Waittime Efficiency**: A pie chart categorizing patients based on whether their wait time was considered efficient or not.
-- **KPIs (Key Performance Indicators)**:
-  - **Total Patients**: The total number of patients analyzed in the dataset.
-  - **Average Satisfaction Rating**: An overall average rating of patient satisfaction.
-  - **Average Wait Time**: The average wait time for all patients.
-  - **Patients by Referral Source**: Total number of patients referred by each type of healthcare provider (Dentist, Neurologist, etc.).
+## 🔹 KPIs (Key Performance Indicators)  
+- **Total Patients** → Count of patients in the dataset.  
+- **Admission Rate (%)** → Percentage of patients admitted.  
+- **Average Wait Time** → Time patients spend before receiving care.  
+- **Predicted vs. Actual Wait Time Deviation** → ML model accuracy measure.  
+- **Patients by Referral Source** → Total number of patients referred by specialty.  
 
-## Technologies Used
-- **Power BI**: Used to create interactive visualizations and dashboards.
-- **DAX (Data Analysis Expressions)**: Used to calculate key metrics like average age, patient status, wait times, etc.
-- **Excel**: Data pre-processing and exploration before final analysis in Power BI.
+## 🛠️ Technologies Used  
+- **Power BI** → Interactive dashboards & data visualizations.  
+- **DAX (Data Analysis Expressions)** → Custom KPIs & calculations.  
+- **Python (Pandas, Scikit-learn, XGBoost)** → ML model development.  
+- **Power Query** → Data transformation & preprocessing.  
+- **Power BI Service** → Report publishing & automated data refresh.  
 
-## How to Use
-1. Download the Power BI (.pbix) file from this repository.
-2. Open the file using **Microsoft Power BI Desktop** (or Power BI Service).
-3. Explore the interactive dashboard, which includes various charts, KPIs, and filters to analyze hospital patient data.
-
+## 📌 How to Use  
+1️⃣ **Download** the Power BI (`.pbix`) file.  
+2️⃣ **Open** it in **Microsoft Power BI Desktop**.  
+3️⃣ **Explore** the interactive dashboard with filters & slicers.  
+4️⃣ **Analyze ML predictions** for **admission probability & wait times**.  
 
